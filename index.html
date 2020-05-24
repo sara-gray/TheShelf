@@ -13,7 +13,7 @@
   <title>The Shelf Admin</title>
 </head>
 
-<body>
+<body class="brown lighten-5">
   <nav class="brown darken-3">
     <div class="container">
       <div class="nav-wrapper">
@@ -141,6 +141,168 @@
     </div>
   </section>
 
+  <!-- Section: Recent Posts & Tools -->
+  <section class="section section-recent">
+    <div class="row">
+      <div class="col s12 m6 l8">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Recent Posts</span>
+            <table class="striped">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Category</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Post One</td>
+                  <td>Milkman</td>
+                  <td><a href="details.html" class="btn brown waves-effect waves-light">Details</a></td>
+                </tr>
+                <tr>
+                  <td>Post Two</td>
+                  <td>Lincoln in the Bardo</td>
+                  <td><a href="details.html" class="btn brown waves-effect waves-light">Details</a></td>
+                </tr>
+                <tr>
+                  <td>Post Three</td>
+                  <td>The Sellout</td>
+                  <td><a href="details.html" class="btn brown  waves-effect waves-light">Details</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Quick ToDo's</span>
+            <form id="todo-form">
+              <div class="input-field">
+                <input id="todo" type="text" placeholder="Add Task ToDo">
+              </div>
+            </form>
+            <ul class="collection todos">
+              <li class="collection-item">
+                <div>Todo One <a href="#!" class="secondary-content delete"><i class="material-icons">close</i></a>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div>Todo Two <a href="#!" class="secondary-content delete"><i class="material-icons">close</i></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="section brown darken-4 white-text center">
+    <p>The Shelf Admin Panel &copy; 2020</p>
+  </footer>
+
+  <!-- Fixed Action Button -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large brown"><i class="material-icons">add</i></a>
+    <ul>
+      <li>
+        <a href="#post-modal" class="modal-trigger btn-floating brown lighten-3 waves-effect waves-light"><i
+            class="material-icons">mode_edit</i></a>
+      </li>
+      <li>
+        <a href="#catagory-modal" class="modal-trigger btn-floating brown lighten-3 waves-effect waves-light"><i
+            class="material-icons">folder</i></a>
+      </li>
+      <li>
+        <a href="#user-modal" class="modal-trigger btn-floating brown lighten-3 waves-effect waves-light"><i
+            class="material-icons">supervisor_account</i></a>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- Add Post Modal -->
+  <div id="post-modal" class="modal">
+    <div class="modal-content">
+      <h4>Add Post</h4>
+      <form>
+        <div class="input-field">
+          <input type="text" id="title">
+          <label for="title">Title</label>
+        </div>
+        <div class="input-field">
+          <select>
+            <option value="" disabled selected>Select Book</option>
+            <option value="1">Milkman</option>
+            <option value="2">The Luminaries</option>
+            <option value="3">Lincoln in the Bardo</option>
+            <option value="4">A Brief History of Seven Kilings</option>
+            <option value="5">The Sellout</option>
+            <option value="6">Bring Up The Bodies</option>
+            <option value="7">The Sense of an Ending</option>
+          </select>
+          <label>Catagory</label>
+        </div>
+        <div class="input-field">
+          <textarea name="body" id="body" class="materialize-textarea"></textarea>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close btn brown white-text waves-effect waves-light">Post</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Catagory Modal -->
+  <div id="catagory-modal" class="modal">
+    <div class="modal-content">
+      <h4>Add Book Club Title</h4>
+      <form>
+        <div class="input-field">
+          <input type="text" id="title">
+          <label for="title">Title</label>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close btn brown white-text waves-effect waves-light">Add Title</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add User Modal -->
+  <div id="user-modal" class="modal">
+    <div class="modal-content">
+      <h4>Add User</h4>
+      <form>
+        <div class="input-field">
+          <input type="text" id="name">
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Password</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="confirm">
+          <label for="confirm">Confirm Password</label>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close btn brown white-text waves-effect waves-light">Add User</a>
+      </div>
+    </div>
+  </div>
+
   <!-- Preloader -->
   <div class="loader preloader-wrapper big active">
     <div class="spinner-layer spinner-red-only">
@@ -160,6 +322,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
   <script src="/js/chart.js"></script>
   <script>
     // Hide ALL sections
@@ -178,6 +341,10 @@
           closeOnClick: true,
           draggable: true,
         });
+
+        $('.modal').modal();
+
+        $('select').material_select();
 
         // Counter
         $('.count').each(function () {
@@ -202,6 +369,30 @@
           Materialize.toast('Comment Denyed', 3000, 'red');
           e.preventDefault();
         });
+
+
+        // Quick ToDos
+        $('#todo-form').submit(function (e) {
+          const output = `<li class="collection-item">
+                <div>${$('#todo').val()}<a href="#!" class="secondary-content delete"><i class="material-icons">close</i></a>
+                </div>
+              </li>`;
+
+          $('.todos').append(output);
+
+          Materialize.toast('ToDo Added', 3000, 'green');
+          $('#todo').val('');
+
+          e.preventDefault();
+        });
+
+        // Delete todos
+        $('.todos').on('click', '.delete', function (e) {
+          $(this).parent().parent().remove();
+          Materialize.toast('ToDo Removed', 3000, 'red');
+        })
+
+        CKEDITOR.replace('body');
 
       });
     }, 1000);
