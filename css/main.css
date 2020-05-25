@@ -3,3 +3,14 @@
   top: 40%;
   left: 47%;
 }
+
+.login {
+  margin: 70px 0;
+}
+
+.btn-extend {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}

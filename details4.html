@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Shelf Admin</title>
+  </head>
+
+  <body class="brown lighten-5">
+    <nav class="brown darken-3">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo"
+            ><i class="material-icons">local_library</i>The Shelf
+            <span class="hide-on-med-and-down">Admin</span></a
+          >
+          <a
+            href="#"
+            data-activates="mobile-nav"
+            class="button-collapse show-on-large right"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="comments.html">Comments</a></li>
+            <li><a href="users.html">Users</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="side-nav" id="mobile-nav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="img/brown-leather-texture-background.jpg" alt="" />
+          </div>
+          <a href="#"><img class="circle" src="img/user1.jpg" alt="" /></a>
+          <a href="#"><span class="name white-text">Hither Claypole</span></a>
+          <a href="#"
+            ><span class="name white-text">hclaypole@gmail.com</span></a
+          >
+        </div>
+      </li>
+      <li>
+        <a href="index.html"
+          ><i class="material-icons">dashboard</i>Dashboard</a
+        >
+      </li>
+      <li><a href="posts.html">Posts</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="comments.html">Comments</a></li>
+      <li><a href="users.html">Users</a></li>
+      <li class="divider"></li>
+      <li><a class="subheader">Account Controls</a></li>
+      <li><a href="login.html" class="waves-effect">Logout</a></li>
+    </ul>
+
+    <!-- Section: Details -->
+    <section class="section section-details grey lighten-4">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-content">
+                <div class="row">
+                  <div class="col s12 m6">
+                    <span class="card-title">Details</span>
+                  </div>
+                  <div class="col s12 m6 center">
+                    <img
+                      src="img/user4.jpg"
+                      alt=""
+                      class="responsive-img circle"
+                      style="width: 40px; margin-left: 10px;"
+                    />
+                    <p>Posted by: Dorbe Labbey</p>
+                    <p>On: 31st January 2020</p>
+                  </div>
+                </div>
+                <form>
+                  <div class="input-field">
+                    <input type="text" id="title" value="Post Four" />
+                    <label for="title">Title</label>
+                  </div>
+                  <div class="input-field">
+                    <select>
+                      <option value="" disabled>Select Option</option>
+                      <option value="1">Milkman</option>
+                      <option value="2">The Luminaries</option>
+                      <option value="3">Lincoln in the Bardo</option>
+                      <option value="4"
+                        >A Brief History of Seven Kilings</option
+                      >
+                      <option value="5">The Sellout</option>
+                      <option value="6" selected>Bring Up The Bodies</option>
+                      <option value="7">The Sense of an Ending</option>
+                    </select>
+                    <label>Book</label>
+                  </div>
+                  <div class="input-field">
+                    <textarea
+                      name="body"
+                      id="body"
+                      class="materialize-textarea"
+                    >
+                                      
+                    The things you think are the disasters in your life are not the disasters really. Almost anything can be turned around: out of every ditch, a path, if you can only see it.
+                    
+                    After winning the Man Booker Prize in 2009 for Wolf Hall, Hilary Mantel made history in 2012, seizing a historic second win for Bring Up the Bodies, making her the first British author and the first woman to be awarded two Man Booker Prizes.
+                    
+                    Continuing where Wolf Hall left off, Bring Up the Bodies is the electrifying second chapter in Mantel’s fictional life of Thomas Cromwell: the Wolf Hall Trilogy.
+                    
+                    It is summer, 1535. Thomas Cromwell has risen far from his beginnings as the son of a Putney Blacksmith, to become Chief Minister to the capricious king, Henry VIII. Having secured the king’s release from his first marriage, Cromwell’s fortunes have risen with the ascendancy of Anne Boleyn but as Anne’s fortunes fade, he is forced to steer a dangerous path to protect both the nation and his own position as he serves the king’s desire for a new queen: Jane Seymour.
+                    
+                    And, as Cromwell manoeuvres himself ever-closer to Henry, memories surface and his own plans – long in the making - come to a thrilling and terrifying fruition, for vengeance is a dish best served cold.
+                    
+                    Publisher: HarperCollins Publishers 
+</textarea
+                    >
+                  </div>
+                </form>
+              </div>
+              <div class="card-action">
+                <button class="btn green waves-effect waves-light">Save</button>
+                <button class="btn red waves-effect waves-light">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section brown darken-4 white-text center">
+      <p>The Shelf Admin Panel &copy; 2020</p>
+    </footer>
+
+    <!-- Preloader -->
+    <div class="loader preloader-wrapper big active">
+      <div class="spinner-layer spinner-red-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+    <script>
+      // Hide ALL sections
+      $('.section').hide();
+
+      setTimeout(function () {
+        $(document).ready(function () {
+          // Show sections
+          $('.section').fadeIn();
+
+          $('.loader').fadeOut();
+
+          $('.button-collapse').sideNav({
+            menuWidth: 200,
+            closeOnClick: true,
+            draggable: true,
+          });
+
+          $('.modal').modal();
+
+          $('select').material_select();
+
+          CKEDITOR.replace('body');
+        });
+      }, 1000);
+    </script>
+  </body>
+</html>
