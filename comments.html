@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Shelf Admin</title>
+  </head>
+
+  <body class="brown lighten-5">
+    <nav class="brown darken-3">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo"
+            ><i class="material-icons">local_library</i>The Shelf Admin</a
+          >
+          <a
+            href="#"
+            data-activates="mobile-nav"
+            class="button-collapse show-on-large right"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li class="active"><a href="comments.html">Comments</a></li>
+            <li><a href="users.html">Users</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="side-nav" id="mobile-nav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="img/brown-leather-texture-background.jpg" alt="" />
+          </div>
+          <a href="#"><img class="circle" src="img/user1.jpg" alt="" /></a>
+          <a href="#"><span class="name white-text">Hither Claypole</span></a>
+          <a href="#"
+            ><span class="name white-text">hclaypole@gmail.com</span></a
+          >
+        </div>
+      </li>
+      <li>
+        <a href="index.html"
+          ><i class="material-icons">dashboard</i>Dashboard</a
+        >
+      </li>
+      <li><a href="posts.html">Posts</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="comments.html">Comments</a></li>
+      <li><a href="users.html">Users</a></li>
+      <li class="divider"></li>
+      <li><a class="subheader">Account Controls</a></li>
+      <li><a href="login.html" class="waves-effect">Logout</a></li>
+    </ul>
+
+    <!-- Section: Comments -->
+    <section class="section section-comments grey lighten-4">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Comments</span>
+                <table class="striped">
+                  <tbody>
+                    <tr>
+                      <td width="70">
+                        <img
+                          src="img/user6.jpg"
+                          alt=""
+                          class="responsive-img circle"
+                          style="width: 40px; margin-left: 10px;"
+                        />
+                      </td>
+                      <td>
+                        Quisby Linkinwater
+                      </td>
+                      <td>
+                        Bring Up The Bodies!! I can't put it down!
+                      </td>
+                      <td>
+                        <a href="#!" class="approve green-text"
+                          ><i class="material-icons">done</i></a
+                        >
+                        <a href="#!" class="deny red-text"
+                          ><i class="material-icons">close</i></a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="70">
+                        <img
+                          src="img/user5.jpg"
+                          alt=""
+                          class="responsive-img circle"
+                          style="width: 40px; margin-left: 10px;"
+                        />
+                      </td>
+                      <td>
+                        Fusty Lugsneckett
+                      </td>
+                      <td>
+                        Has anyone got a paperback copy of The Luminaries they
+                        could lend me please?
+                      </td>
+                      <td>
+                        <a href="#!" class="approve green-text"
+                          ><i class="material-icons">done</i></a
+                        >
+                        <a href="#!" class="deny red-text"
+                          ><i class="material-icons">close</i></a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="70">
+                        <img
+                          src="img/user4.jpg"
+                          alt=""
+                          class="responsive-img circle"
+                          style="width: 40px; margin-left: 10px;"
+                        />
+                      </td>
+                      <td>
+                        Dorbe Labbey
+                      </td>
+                      <td>
+                        I have, I'll send it to you. What is your address?
+                      </td>
+                      <td>
+                        <a href="#!" class="approve green-text"
+                          ><i class="material-icons">done</i></a
+                        >
+                        <a href="#!" class="deny red-text"
+                          ><i class="material-icons">close</i></a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="70">
+                        <img
+                          src="img/user1.jpg"
+                          alt=""
+                          class="responsive-img circle"
+                          style="width: 40px; margin-left: 10px;"
+                        />
+                      </td>
+                      <td>
+                        Hither Claypole
+                      </td>
+                      <td>
+                        I can't believe that he kills her off in the last
+                        chapter! He has just lost the most interesting character
+                        in the whole book!
+                      </td>
+                      <td>
+                        <a href="#!" class="approve green-text"
+                          ><i class="material-icons">done</i></a
+                        >
+                        <a href="#!" class="deny red-text"
+                          ><i class="material-icons">close</i></a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="70">
+                        <img
+                          src="img/user2.jpg"
+                          alt=""
+                          class="responsive-img circle"
+                          style="width: 40px; margin-left: 10px;"
+                        />
+                      </td>
+                      <td>
+                        Brannigan Harold
+                      </td>
+                      <td>
+                        Woa!! Spoiler alert or what! I might just stop reading
+                        now?
+                      </td>
+                      <td>
+                        <a href="#!" class="approve green-text"
+                          ><i class="material-icons">done</i></a
+                        >
+                        <a href="#!" class="deny red-text"
+                          ><i class="material-icons">close</i></a
+                        >
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td width="70">
+                        <img
+                          src="img/user3.jpg"
+                          alt=""
+                          class="responsive-img circle"
+                          style="width: 40px; margin-left: 10px;"
+                        />
+                      </td>
+                      <td>
+                        Mizzen Donny
+                      </td>
+                      <td>
+                        Oh come on! Everyone knew that surely? It was leaked at
+                        the Booker's last week?
+                      </td>
+                      <td>
+                        <a href="#!" class="approve green-text"
+                          ><i class="material-icons">done</i></a
+                        >
+                        <a href="#!" class="deny red-text"
+                          ><i class="material-icons">close</i></a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="card-action">
+                <ul class="pagination">
+                  <li class="disabled">
+                    <a href="#!" class="brown-text"
+                      ><i class="material-icons">chevron_left</i></a
+                    >
+                  </li>
+                  <li class="active brown lighten-2">
+                    <a class="white-text" href="#!">1</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a class="brown-text" href="#!">2</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a class="brown-text" href="#!">3</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a class="brown-text" href="#!">4</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a class="brown-text" href="#!">5</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a href="#!" class="brown-text"
+                      ><i class="material-icons">chevron_right</i></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section brown darken-4 white-text center">
+      <p>The Shelf Admin Panel &copy; 2020</p>
+    </footer>
+
+    <!-- Fixed Action Button -->
+    <div class="fixed-action-btn">
+      <a href="#book-modal" class="modal-trigger btn-floating btn-large brown"
+        ><i class="material-icons">add</i></a
+      >
+    </div>
+
+    <!-- Add Book Modal -->
+    <div id="book-modal" class="modal">
+      <div class="modal-content">
+        <h4>Add Book Club Title</h4>
+        <form>
+          <div class="input-field">
+            <input type="text" id="title" />
+            <label for="title">Title</label>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <a
+            href="#!"
+            class="modal-action modal-close btn brown white-text waves-effect waves-light"
+            >Add Title</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Preloader -->
+    <div class="loader preloader-wrapper big active">
+      <div class="spinner-layer spinner-red-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      // Hide ALL sections
+      $('.section').hide();
+
+      setTimeout(function () {
+        $(document).ready(function () {
+          // Show sections
+          $('.section').fadeIn();
+
+          $('.loader').fadeOut();
+
+          $('.button-collapse').sideNav({
+            menuWidth: 200,
+            closeOnClick: true,
+            draggable: true,
+          });
+
+          // Comments Approve or Deny
+          $('.approve').click(function (e) {
+            Materialize.toast('Comment Approved', 3000, 'green');
+            e.preventDefault();
+          });
+
+          $('.deny').click(function (e) {
+            Materialize.toast('Comment Denyed', 3000, 'red');
+            e.preventDefault();
+          });
+
+          $('.modal').modal();
+        });
+      }, 1000);
+    </script>
+  </body>
+</html>
